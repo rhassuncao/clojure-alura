@@ -19,3 +19,6 @@
 
 
 (println (valor-descontado (fn [valor-bruto] (> valor-bruto 100)) 1000))
+(println (valor-descontado (fn [v] (> v 100)) 1000))
+(println (valor-descontado #(> %1 100) 1000))
+(println (valor-descontado #(> % 100) 1000))
